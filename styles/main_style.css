@@ -1,0 +1,150 @@
+* {
+    outline: 0px solid red;
+    outline-offset: -1px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+@font-face {
+    font-family: "SourceSerifSemiBold";
+    src: url("source-serif-pro.semibold.otf") format("opentype");
+}
+@font-face{
+    font-family: "SourceSerifBold";
+    src: url("source-serif-pro.bold.otf") format("opentype");
+}
+
+:root {
+    --sombre: #29343b;
+    --azure: #98C0D9;
+    --olive_pale: #ddeaf1;
+    --bleu_background: #6C9DC7;
+    --body_padding: 15%;
+}
+
+body {
+    background-color: var(--bleu_background);
+    font-family: "SourceSerifBold, Arial, Helvetica";
+    font-size: 28px;
+    padding-left: var( --body_padding);
+    padding-right: var( --body_padding);
+    min-width: 600px;
+}
+
+header {
+    background-color: var(--azure);
+    padding: 0px;
+    height: 50px
+}
+
+main {
+    background-color: var(--azure);
+}
+
+h1 {
+    font-family: "SourceSerifBold";
+}
+
+.contenu{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 90%;
+    overflow: auto;
+    background-color: var(--azure);
+    min-width: 600px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.contenu h1 {
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+.separateur {
+    background-color: var(--bleu_background);
+    height: 100px;;
+}
+
+.desc {
+    background-color: var(--azure);
+    font-size: 18px;
+    max-width: 37%;
+    min-width: 20%;
+}
+
+.desc_left {
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.desc_right {
+    padding-right: 10%;
+    padding-top: 10%;
+}
+
+.image_gauche {
+    float:left;
+    padding-left: 10%;
+    padding-top: 10%;
+    height: 500px;
+}
+
+.image_right {
+    float:right;
+    padding-right: 10%;
+    padding-top: 10%;
+    height: 500px;
+}
+
+
+.rasterisateur {
+    float: left;
+    height: 400px;
+}
+
+.recherche {
+    float: right;
+}
+
+nav {
+    background-color: var(--sombre);
+    width: 100%;
+    margin-bottom: 10px;
+    min-width: 600px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+    overflow: hidden;
+    top: 0;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    background-color: var(--sombre);
+    color: var(--olive_pale);
+    text-align: center;
+    padding: 6px 60px;
+  }
+
+  .current{
+    text-decoration: none;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 6px 60px;
+  }
+  
+  nav li a:hover {
+    background-color: var(--olive_pale);
+    color: black;
+  }
+
+  footer {
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 20px;
+  }
