@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Patrick Béland - Programmeur</title>
+        <link rel="stylesheet" href="styles/main_style.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li class="current"><a href="contact.html">Contact</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="contact">
+                <form action="action_page.php">
+                    <label for="fullname">Prénom et nom</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Votre nom complet..."><br>
+                    <label for="email">Adresse e-mail</label><br>
+                    <input type="text" id="email" name="email" placeholder="ex: john123@outlook.com"><br>
+                    <label for="msg">Message</label><br>
+                    <textarea name="msg" id="msg" cols="60" rows="20" placeholder="Bonjour..."></textarea><br>
+                    <input type="submit" id="submit-btn" value="Envoyer">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="link-socials">
+                <p>Ma page GitHub: <a href="https://github.com/patrick0x80">https://github.com/patrick0x80</a></p>
+            </div>
+            <div id="copyright-text">
+                <p>© 2022 Patrick Béland.</p>
+            </div>
+        </footer>
+    </body>
+</html>
